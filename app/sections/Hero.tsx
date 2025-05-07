@@ -19,12 +19,12 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl sm:text-5xl font-bold text-darkgreen text-center mb-8">
+    <section className="min-h-screen flex flex-col justify-center items-center bg-beige text-darkgreen font-poppins">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <h1 className="text-4xl sm:text-5xl font-bold text-green text-center mb-8">
           AbodegaD
         </h1>
-        <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto">
+        <p className="text-lg text-darkgreen text-center max-w-3xl mx-auto">
           Un espacio único donde la tradición y la modernidad se encuentran para crear experiencias inolvidables.
         </p>
       </div>

@@ -2,9 +2,11 @@ import Image from "next/image";
 
 export default function Nosotros() {
   return (
-    <section id="nosotros" className="py-20 bg-beige text-darkgreen font-poppins">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-green text-center mb-12 font-poppins">Nosotros</h2>
+    <section className="min-h-screen flex flex-col justify-center items-center bg-beige text-darkgreen font-poppins">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <h2 className="text-3xl sm:text-4xl font-bold text-green text-center mb-12 font-poppins">
+          Nosotros
+        </h2>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-darkgreen font-poppins">
