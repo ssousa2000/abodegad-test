@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Nosotros() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center bg-beige text-darkgreen font-poppins">
+    <section id="nosotros" className="min-h-screen flex flex-col justify-center items-center bg-beige text-darkgreen font-poppins">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <h2 className="text-3xl sm:text-4xl font-bold text-green text-center mb-12 font-poppins">
           Nosotros

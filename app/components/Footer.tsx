@@ -14,11 +14,23 @@ export default function Footer() {
           </div>
           <div className="grid grid-cols-2 gap-4 text-sm h-full">
             <div className="space-y-2">
-              <span className="font-bold">Contacto</span>
-              <div>Dirección: [Tu dirección aquí]</div>
-              <div>Teléfono: [Tu teléfono aquí]</div>
-              <div>Email: [Tu email aquí]</div>
+              <span className="font-bold">Enlaces</span>
+              <div>
+                <a href="#nosotros" className="hover:text-mustard block">
+                  Nosotros
+                </a>
+                <a href="#cartas" className="hover:text-mustard block">
+                  Cartas
+                </a>
+                <a href="#eventos" className="hover:text-mustard block">
+                  Eventos
+                </a>
+                <a href="#reservas" className="hover:text-mustard block">
+                  Reservas
+                </a>
+              </div>
             </div>
+
             <div className="space-y-2">
               <span className="font-bold">Horario</span>
               <div>Lunes - Viernes: 12:00 - 23:00</div>
@@ -39,10 +51,12 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-4 pt-4 border-t border-gray-700 text-center text-gray-300 text-xs">
-          <p>&copy; {new Date().getFullYear()} Antigua Bodega. Todos los derechos reservados.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Antigua Bodega. Todos los derechos
+            reservados.
+          </p>
         </div>
       </div>
     </footer>
   );
 }
-  

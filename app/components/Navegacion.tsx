@@ -17,7 +17,10 @@ export default function Navegacion() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-beige shadow-lg">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-4 sm:px-6">
         {/* Logo (temporal: solo texto) */}
-        <Link href="/" className="text-xl font-bold tracking-wide text-darkgreen hover:text-mustard transition-colors duration-200">
+        <Link
+          href="/"
+          className="text-xl font-bold tracking-wide text-darkgreen hover:text-mustard transition-colors duration-200"
+        >
           Antigua Bodega
         </Link>
 
@@ -25,12 +28,12 @@ export default function Navegacion() {
         <ul className="hidden md:flex gap-8 font-medium text-darkgreen">
           {navItems.map((item) => (
             <li key={item.name}>
-              <Link
+              <a
                 href={item.href}
                 className="hover:text-mustard transition-colors duration-200 text-lg"
               >
                 {item.name}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
@@ -72,13 +75,13 @@ export default function Navegacion() {
           <ul className="flex flex-col gap-4 font-medium text-darkgreen">
             {navItems.map((item) => (
               <li key={item.name}>
-                <Link
+                <a
                   href={item.href}
                   className="block hover:text-mustard text-lg"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
