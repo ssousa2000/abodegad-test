@@ -23,7 +23,7 @@ export default function Nosotros() {
               tradición con la innovación en cada detalle.
             </p>
           </div>
-          <div className="relative h-[350px] rounded-lg overflow-hidden shadow-lg border-4 border-lightmustard">
+          <div className="relative h-[350px] rounded-lg overflow-hidden shadow-lg border-4 border-white">
             <Image
               src="/placeholder-restaurant.jpg"
               alt="AbodegaD Interior"
