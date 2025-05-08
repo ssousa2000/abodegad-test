@@ -8,10 +8,10 @@ export default function Reservas() {
   return (
     <section
       id="reservas"
-      className="min-h-screen flex flex-col justify-center items-center bg-beige text-darkgreen font-poppins px-4 py-16"
+      className="min-h-screen flex flex-col justify-center items-center bg-darkgreen text-darkgreen font-poppins px-4 py-16"
     >
       <div className="w-full max-w-xl bg-[#f3ebc8] rounded-xl shadow-md p-8 border border-darkgreen">
-        <h2 className="text-3xl font-bold mb-6 text-center text-green">Reservas</h2>
+        <h2 className="text-3xl font-bold mb-6 text-center text-darkgreen">Reservas</h2>
 
         <form
           onSubmit={(e) => {
@@ -84,11 +84,12 @@ export default function Reservas() {
 
           <div>
             <label className="block text-sm font-medium mb-1" htmlFor="mensaje">
-              Cuéntanos más
+              Indicanos la fecha, hora y si es una ocasión especial.<span className="text-mustard">*</span>
             </label>
             <textarea
               id="mensaje"
               name="mensaje"
+              required
               rows={4}
               className="w-full rounded-md border border-darkgreen bg-white text-darkgreen px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green"
             ></textarea>
@@ -97,7 +98,7 @@ export default function Reservas() {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-mustard text-darkgreen font-semibold px-6 py-2 rounded-full shadow-md hover:bg-lightmustard transition"
+              className="bg-lightmustard text-darkgreen font-semibold px-6 py-2 rounded-full shadow-md hover:bg-mustard transition"
             >
               Reservar
             </button>

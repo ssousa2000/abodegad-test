@@ -14,9 +14,9 @@ export default function Home() {
       <Navegacion />
       <Hero />
       <Nosotros />
-      <SocialProof />
       <Cartas />
       <CarouselPlatos />
+      <SocialProof />
       <Eventos />
       <Reservas />
       <Footer />
