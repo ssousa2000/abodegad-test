@@ -4,9 +4,12 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const images = [
-  "/images/hero/1.jpeg",
-  "/images/hero/2.jpg",
+  "/images/hero/1.JPG",
+  "/images/hero/2.JPG",
   "/images/hero/3.jpg",
+  "/images/hero/4.jpg",
+  "/images/hero/5.jpg",
+  "/images/hero/6.jpg",
 ];
 
 export default function Hero() {
@@ -33,7 +36,9 @@ export default function Hero() {
             src={src}
             alt={`Slide ${i + 1}`}
             fill
-            className="object-cover"
+            className={`object-cover transform transition-transform duration-[20000ms] ease-out ${
+              i === index ? "scale-110" : "scale-100"
+            }`}
             priority={i === 0}
             sizes="100vw"
           />
@@ -51,21 +56,24 @@ export default function Hero() {
             <h1 className="text-4xl sm:text-6xl font-bold text-lightmustard mb-6">
               Antigua Bodega Dalmacia
             </h1>
-            <p className="text-white text-lg sm:text-xl leading-relaxed max-w-lg">
-              Un espacio único donde la tradición y la modernidad se encuentran para crear experiencias inolvidables.
+            <p className="text-beige text-lg sm:text-xl leading-relaxed max-w-lg">
+              Un espacio único donde la tradición y la modernidad se encuentran
+              para crear experiencias inolvidables.
             </p>
           </div>
 
           {/* Columna derecha: horario */}
-          <div className="text-right text-white self-center">
+          <div className="text-right text-beige self-center">
             <h3 className="text-xl sm:text-2xl font-semibold text-lightmustard mb-2">
               Horario de atención:
             </h3>
             <p>
-              <span className="font-bold text-white">Lunes a Viernes:</span> 12:00 – 23:00
+              <span className="font-bold text-beige">Lunes a Viernes:</span>{" "}
+              12:00 – 23:00
             </p>
             <p>
-              <span className="font-bold text-white">Sábados y Domingos:</span> 12:00 – 00:00
+              <span className="font-bold text-beige">Sábados y Domingos:</span>{" "}
+              12:00 – 00:00
             </p>
           </div>
         </div>

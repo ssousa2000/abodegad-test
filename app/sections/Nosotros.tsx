@@ -4,29 +4,31 @@ export default function Nosotros() {
   return (
     <section
       id="nosotros"
-      className="min-h-screen flex flex-col justify-center items-center bg-beige text-darkgreen font-poppins"
+      className="min-h-screen bg-beige text-darkgreen font-poppins px-4 py-24 flex justify-center items-center"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <h2 className="text-3xl sm:text-4xl font-bold text-darkgreen text-center mb-12">
-          Nosotros
-        </h2>
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 text-lg leading-relaxed">
-            <p>
-              En{" "}
-              <span className="font-bold text-lightmustard">AbodegaD</span>, nos
-              enorgullece ofrecer un espacio donde la historia y la gastronomía
-              se entrelazan para crear momentos memorables.
-            </p>
-            <p>
-              Nuestro compromiso es brindar una experiencia única, combinando la
-              tradición con la innovación en cada detalle.
-            </p>
-          </div>
-          <div className="relative h-[350px] rounded-lg overflow-hidden shadow-lg border-4 border-darkgreen">
+      <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-5 gap-10 items-start">
+        {/* Texto estrecho (2/5) */}
+        <div className="md:col-span-2">
+          <h2 className="text-5xl font-bold text-darkgreen mb-8 font-theSeasons">
+            Nosotros
+          </h2>
+          <p className="text-base leading-relaxed mb-4">
+            En Bodega Dalmacia, cada detalle está pensado para que te sientas como en casa. Nuestra
+            cocina se inspira en recetas familiares, preparadas con ingredientes de calidad y mucho
+            cariño.
+          </p>
+          <p className="text-base leading-relaxed">
+            Creemos en una experiencia cercana, sin pretensiones, donde la tradición y la buena atención
+            crean momentos memorables.
+          </p>
+        </div>
+
+        {/* Imagen amplia (3/5) */}
+        <div className="md:col-span-3 pr-2">
+          <div className="relative h-[420px] rounded-xl overflow-hidden shadow-lg border-2 border-green">
             <Image
-              src="/placeholder-restaurant.jpg"
-              alt="AbodegaD Interior"
+              src="/images/dalmacia-interior.jpg"
+              alt="Interior Bodega Dalmacia"
               fill
               className="object-cover"
               priority
