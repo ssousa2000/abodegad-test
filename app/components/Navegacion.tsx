@@ -19,12 +19,15 @@ export default function Navegacion() {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-4 sm:px-6">
         {/* Logo */}
 
-        <Link href="/" className="flex items-center">
+        <Link
+          href="/"
+          className="flex items-center transition-transform duration-200 hover:scale-105"
+        >
           <Image
             src="/LogoDalmacia/dalmacia.png"
             alt="Logo BodegaD"
-            width={140} // puedes ajustar según se necesite
-            height={70}
+            width={120}
+            height={60}
             className="h-auto w-auto"
             priority
           />
@@ -36,7 +39,7 @@ export default function Navegacion() {
             <li key={item.name}>
               <a
                 href={item.href}
-                className="hover:text-mustard transition-colors duration-200 text-lg"
+                className="inline-block hover:text-mustard transition-all duration-200 text-lg transform hover:scale-105"
               >
                 {item.name}
               </a>
@@ -84,7 +87,7 @@ export default function Navegacion() {
               <li key={item.name}>
                 <a
                   href={item.href}
-                  className="block hover:text-mustard text-lg"
+                  className="inline-block hover:text-mustard text-lg transition-all duration-200 transform hover:scale-105"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}

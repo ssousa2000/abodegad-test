@@ -8,10 +8,12 @@ export default function Reservas() {
   return (
     <section
       id="reservas"
-      className="min-h-screen flex flex-col justify-center items-center bg-darkgreen text-darkgreen font-poppins px-4 py-16"
+      className="min-h-screen flex flex-col justify-center items-center bg-beige text-darkgreen px-4 py-16 font-poppins"
     >
       <div className="w-full max-w-xl bg-[#f3ebc8] rounded-xl shadow-md p-8 border border-darkgreen">
-        <h2 className="text-3xl font-bold mb-6 text-center text-darkgreen">Reservas</h2>
+        <h2 className="text-3xl font-theSeasons font-bold mb-6 text-center text-darkgreen">
+          Reservas
+        </h2>
 
         <form
           onSubmit={(e) => {
@@ -21,7 +23,7 @@ export default function Reservas() {
           className="space-y-6"
         >
           <div>
-            <label className="block text-sm font-medium mb-1" htmlFor="nombre">
+            <label className="block text-sm font-theSeasons mb-1" htmlFor="nombre">
               Nombre <span className="text-mustard">*</span>
             </label>
             <input
@@ -29,12 +31,12 @@ export default function Reservas() {
               name="nombre"
               type="text"
               required
-              className="w-full rounded-md border border-darkgreen bg-white text-darkgreen px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green"
+              className="w-full rounded-md border border-darkgreen bg-beige text-darkgreen font-poppins px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1" htmlFor="email">
+            <label className="block text-sm font-theSeasons mb-1" htmlFor="email">
               Email <span className="text-mustard">*</span>
             </label>
             <input
@@ -42,12 +44,12 @@ export default function Reservas() {
               name="email"
               type="email"
               required
-              className="w-full rounded-md border border-darkgreen bg-white text-darkgreen px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green"
+              className="w-full rounded-md border border-darkgreen bg-beige text-darkgreen font-poppins px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1" htmlFor="telefono">
+            <label className="block text-sm font-theSeasons mb-1" htmlFor="telefono">
               Teléfono <span className="text-mustard">*</span>
             </label>
             <input
@@ -55,12 +57,12 @@ export default function Reservas() {
               name="telefono"
               type="tel"
               required
-              className="w-full rounded-md border border-darkgreen bg-white text-darkgreen px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green"
+              className="w-full rounded-md border border-darkgreen bg-beige text-darkgreen font-poppins px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1" htmlFor="personas">
+            <label className="block text-sm font-theSeasons mb-1" htmlFor="personas">
               ¿Cuántas personas? <span className="text-mustard">*</span>
             </label>
             <select
@@ -69,7 +71,7 @@ export default function Reservas() {
               required
               value={personas}
               onChange={(e) => setPersonas(e.target.value)}
-              className="w-full rounded-md border border-darkgreen bg-white text-darkgreen px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green"
+              className="w-full rounded-md border border-darkgreen bg-beige text-darkgreen font-poppins px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green"
             >
               {Array.from({ length: 10 }, (_, i) => (
                 <option key={i + 1} value={i + 1}>
@@ -77,28 +79,29 @@ export default function Reservas() {
                 </option>
               ))}
             </select>
-            <p className="text-xs text-darkgreen mt-1">
+            <p className="text-xs text-darkgreen mt-1 font-poppins">
               * Si son más de 10 personas, por favor indícalo abajo.
             </p>
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1" htmlFor="mensaje">
-              Indicanos la fecha, hora y si es una ocasión especial.<span className="text-mustard">*</span>
+            <label className="block text-sm font-theSeasons mb-1" htmlFor="mensaje">
+              Indícanos la fecha, hora y si es una ocasión especial.{" "}
+              <span className="text-mustard">*</span>
             </label>
             <textarea
               id="mensaje"
               name="mensaje"
               required
               rows={4}
-              className="w-full rounded-md border border-darkgreen bg-white text-darkgreen px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green"
+              className="w-full rounded-md border border-darkgreen bg-beige text-darkgreen font-poppins px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green"
             ></textarea>
           </div>
 
           <div className="text-center">
             <button
               type="submit"
-              className="bg-lightmustard text-darkgreen font-semibold px-6 py-2 rounded-full shadow-md hover:bg-mustard transition"
+              className="bg-darkgreen text-beige font-theSeasons px-6 py-2 rounded-full shadow-md hover:bg-mustard transition"
             >
               Reservar
             </button>

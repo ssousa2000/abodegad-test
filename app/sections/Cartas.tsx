@@ -17,11 +17,11 @@ export default function Cartas() {
   return (
     <section
       id="cartas"
-      className="min-h-[50vh] flex flex-col justify-start items-center bg-darkgreen text-white font-poppins py-16 px-4"
+      className="min-h-[50vh] flex flex-col justify-start items-center bg-beige text-darkgreen font-poppins py-24 px-4"
     >
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-4 text-white">Nuestras Cartas</h2>
-        <p className="text-lg mb-10 text-white">
+        <h2 className="text-3xl font-bold mb-4 text-darkgreen">Nuestras Cartas</h2>
+        <p className="text-lg mb-10 text-darkgreen">
           Cada plato refleja nuestra dedicación por ofrecer  <span className="font-bold text-lightmustard">sabor, tradición y calidad</span>.
         </p>
       </div>
@@ -33,7 +33,7 @@ export default function Cartas() {
             href={carta.archivo}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white hover:shadow-xl transition rounded-lg border border-lightmustard p-6 text-center flex flex-col items-center justify-center"
+            className="bg-[#f3ebc8] hover:shadow-xl transition rounded-lg border border-darkgreen p-6 text-center flex flex-col items-center justify-center"
           >
             <span className="text-xl font-semibold text-darkgreen mb-2 text-center">{carta.nombre}</span>
           </a>

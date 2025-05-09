@@ -4,10 +4,10 @@ export default function Nosotros() {
   return (
     <section
       id="nosotros"
-      className="min-h-screen flex flex-col justify-center items-center bg-darkgreen text-white font-poppins"
+      className="min-h-screen flex flex-col justify-center items-center bg-beige text-darkgreen font-poppins"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-12">
+        <h2 className="text-3xl sm:text-4xl font-bold text-darkgreen text-center mb-12">
           Nosotros
         </h2>
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -23,7 +23,7 @@ export default function Nosotros() {
               tradición con la innovación en cada detalle.
             </p>
           </div>
-          <div className="relative h-[350px] rounded-lg overflow-hidden shadow-lg border-4 border-white">
+          <div className="relative h-[350px] rounded-lg overflow-hidden shadow-lg border-4 border-darkgreen">
             <Image
               src="/placeholder-restaurant.jpg"
               alt="AbodegaD Interior"

@@ -4,7 +4,7 @@ export default function SocialProof() {
   return (
     <section
       id="socialproof"
-      className="min-h-[50vh] flex flex-col justify-start items-center bg-darkgreen text-white font-poppins py-16 px-4"
+      className="min-h-[50vh] flex flex-col justify-start items-center bg-beige text-darkgreen font-poppins py-16 px-4"
     >
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4">Reseñas y Reconocimientos</h2>
@@ -19,7 +19,7 @@ export default function SocialProof() {
           href="https://www.google.com/search?q=la+dalmacia+miraflores+google+reviews#lrd=0x9105b7e2234bc335:0x87b75259116cb2b7,1"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white border border-lightmustard rounded-lg p-6 shadow hover:shadow-xl transition flex flex-col gap-2 items-center text-center"
+          className="bg-[#f3ebc8] border border-lightmustard rounded-lg p-6 shadow hover:shadow-xl transition flex flex-col gap-2 items-center text-center"
         >
           <Image src="/socialProof/googleReviews.png" alt="Google Reviews" width={80} height={30} />
           <p className="text-sm text-darkgreen">⭐⭐⭐⭐⭐ 4.5 / 5 (400+ opiniones)</p>
@@ -33,7 +33,7 @@ export default function SocialProof() {
           href="https://www.tripadvisor.com.pe/Restaurant_Review-g294316-d813492-Reviews-Bodega_Dalmacia-Lima_Lima_Region.html"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white border border-lightmustard rounded-lg p-4 shadow hover:shadow-xl transition flex flex-col gap-2 items-center text-center"
+          className="bg-[#f3ebc8] border border-lightmustard rounded-lg p-4 shadow hover:shadow-xl transition flex flex-col gap-2 items-center text-center"
         >
           <Image src="/socialProof/tripAdvisor.png" alt="TripAdvisor" width={90} height={30} />
           <p className="text-sm text-darkgreen">⭐⭐⭐⭐ 4.0 / 5 (66 opiniones)</p>
@@ -47,7 +47,7 @@ export default function SocialProof() {
           href="https://www.mesa247.pe/lima/restaurante/la-dalmacia"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white border border-lightmustard rounded-lg p-6 shadow hover:shadow-xl transition flex flex-col gap-5 items-center text-center"
+          className="bg-[#f3ebc8] border border-lightmustard rounded-lg p-6 shadow hover:shadow-xl transition flex flex-col gap-5 items-center text-center"
         >
           <Image src="/socialProof/mesa24-7.png" alt="Mesa 24/7" width={100} height={50} />
           <p className="text-sm text-darkgreen">⭐⭐⭐⭐⭐ 4.5 / 5</p>
