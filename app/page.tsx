@@ -5,7 +5,6 @@ import Nosotros from "./sections/Nosotros";
 import SocialProof from "./sections/SocialProof";
 import Cartas from "./sections/Cartas";
 import CarouselPlatos from "./sections/CarouselPlatos";
-import Eventos from "./sections/Eventos";
 import Reservas from "./sections/Reservas";
 
 export default function Home() {
@@ -17,7 +16,6 @@ export default function Home() {
       <Cartas />
       <CarouselPlatos />
       <SocialProof />
-      <Eventos />
       <Reservas />
       <Footer />
     </div>

@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const images = [
-  "/images/hero/1.JPG",
-  "/images/hero/2.JPG",
+  "/images/hero/1.jpg",
+  "/images/hero/2.jpg",
   "/images/hero/3.jpg",
   "/images/hero/4.jpg",
   "/images/hero/5.jpg",
@@ -54,7 +54,7 @@ export default function Hero() {
           {/* Columna izquierda: texto slogan */}
           <div className="text-left self-center">
             <h1 className="text-4xl sm:text-6xl font-bold text-lightmustard mb-6">
-              Antigua Bodega Dalmacia
+              Bodega Dalmacia
             </h1>
             <p className="text-beige text-lg sm:text-xl leading-relaxed max-w-lg">
               Un espacio único donde la tradición y la modernidad se encuentran
