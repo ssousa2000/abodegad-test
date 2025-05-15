@@ -13,8 +13,8 @@ export default function Home() {
       <Navegacion />
       <Hero />
       <Nosotros />
-      <Cartas />
       <CarouselPlatos />
+      <Cartas />
       <SocialProof />
       <Reservas />
       <Footer />

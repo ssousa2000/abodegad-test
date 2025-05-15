@@ -10,7 +10,6 @@ export default function Navegacion() {
   const navItems = [
     { name: "Nosotros", href: "#nosotros" },
     { name: "Cartas", href: "#cartas" },
-    { name: "Eventos", href: "#eventos" },
     { name: "Reservas", href: "#reservas" },
   ];
 

@@ -4,7 +4,7 @@ export default function Nosotros() {
   return (
     <section
       id="nosotros"
-      className="min-h-screen bg-beige text-darkgreen font-poppins px-4 py-24 flex justify-center items-center"
+      className=" bg-beige text-darkgreen font-poppins px-4 py-24 flex justify-center items-center"
     >
       <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-5 gap-10 items-start">
         {/* Texto estrecho (2/5) */}

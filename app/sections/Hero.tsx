@@ -53,9 +53,14 @@ export default function Hero() {
         <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-7xl px-6 md:px-12 gap-8">
           {/* Columna izquierda: texto slogan */}
           <div className="text-left self-center">
-            <h1 className="text-4xl sm:text-6xl font-bold text-lightmustard mb-6">
-              Bodega Dalmacia
-            </h1>
+            <Image
+              src="/LogoDalmacia/dalmacia-copy.png" // asegúrate de que esta ruta sea correcta
+              alt="Logo Bodega Dalmacia"
+              width={300} // ajusta según lo necesites
+              height={100}
+              className="mb-6"
+              priority
+            />
             <p className="text-beige text-lg sm:text-xl leading-relaxed max-w-lg">
               Un espacio único donde la tradición y la modernidad se encuentran
               para crear experiencias inolvidables.

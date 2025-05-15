@@ -1,6 +1,6 @@
 // app/layout.tsx
 import "./globals.css";
-import { Poppins } from "next/font/google";
+import { Beau_Rivage, Poppins } from "next/font/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -25,3 +25,7 @@ export default function RootLayout({
     </html>
   );
 }
+
+
+
+
