@@ -45,39 +45,26 @@ export default function CarouselPlatos() {
   }, [current, autoSlide]);
 
   return (
-    <section className="bg-beige py-12 px-4 font-poppins text-darkgreen">
-       {/* SVG decorativo superior izquierdo */}
+    <section className="relative bg-beige py-20 px-4 font-poppins text-darkgreen overflow-hidden">
+      {/* ✅ SVG central grande como fondo decorativo */}
       <svg
-        width="600"
-        height="600"
-        viewBox="0 0 600 600"
+        width="1000"
+        height="1000"
+        viewBox="0 0 1000 1000"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute top-0 right-0 opacity-80 pointer-events-none z-0"
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-80 pointer-events-none z-0"
       >
-        <circle cx="400" cy="400" r="80" stroke="#E9A23B" strokeWidth="2.5" />
-        <circle cx="400" cy="400" r="120" stroke="#E9A23B" strokeWidth="1.5" />
-        <circle cx="400" cy="400" r="160" stroke="#E9A23B" strokeWidth="1.5" />
-        <circle cx="400" cy="400" r="200" stroke="#E9A23B" strokeWidth="1.5" />
+        <circle cx="500" cy="500" r="200" stroke="#E9A23B" strokeWidth="1.5" />
+        <circle cx="500" cy="500" r="300" stroke="#E9A23B" strokeWidth="1.5" />
+        <circle cx="500" cy="500" r="400" stroke="#E9A23B" strokeWidth="1.5" />
+        <circle cx="500" cy="500" r="495" stroke="#E9A23B" strokeWidth="1.5" />
       </svg>
 
-      {/* SVG decorativo inferior derecho */}
-      <svg
-        width="400"
-        height="400"
-        viewBox="0 0 400 400"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="absolute bottom-0 left-0 opacity-80 pointer-events-none z-0"
-      >
-        <circle cx="200" cy="200" r="80" stroke="#E9A23B" strokeWidth="2.5" />
-        <circle cx="200" cy="200" r="120" stroke="#E9A23B" strokeWidth="1.5" />
-        <circle cx="200" cy="200" r="160" stroke="#E9A23B" strokeWidth="1.5" />
-        <circle cx="200" cy="200" r="190" stroke="#E9A23B" strokeWidth="1.5" />
-      </svg>
-      <div className="max-w-4xl mx-auto text-center">
+      {/* Texto */}
+      <div className="relative z-10 max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4 text-darkgreen font-theSeasons">
-          Una coleccion de momentos y platos en la bodega{" "}
+          Una coleccion de momentos y platos en la bodega
         </h2>
         <p className="text-lg mb-10">
           Sabores que cuentan historias,{" "}
@@ -87,13 +74,18 @@ export default function CarouselPlatos() {
           .
         </p>
       </div>
-      <div className="relative max-w-4xl mx-auto my-4 py-2  rounded-xl border-2 border-darkgreen overflow-hidden shadow-md">
+
+      {/* Carrusel */}
+      <div className="relative z-10 max-w-4xl mx-auto my-4 py-2 rounded-xl border-2 border-darkgreen overflow-hidden shadow-md bg-beige">
         <div
-          className="flex transition-transform duration-700 ease-in-out "
+          className="flex transition-transform duration-700 ease-in-out"
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
           {images.map((src, i) => (
-            <div className="min-w-full h-[550px] relative overflow-hidden rounded-xl" key={i}>
+            <div
+              className="min-w-full h-[550px] relative overflow-hidden rounded-xl"
+              key={i}
+            >
               <Image
                 src={src}
                 alt={`Slide ${i}`}
@@ -120,7 +112,7 @@ export default function CarouselPlatos() {
       </div>
 
       {/* Dots */}
-      <div className="flex justify-center gap-2 mt-6">
+      <div className="relative z-10 flex justify-center gap-2 mt-6">
         {images.map((_, i) => (
           <button
             key={i}
@@ -133,7 +125,7 @@ export default function CarouselPlatos() {
       </div>
 
       {/* Auto Slide Checkbox */}
-      <div className="mt-4 text-center">
+      <div className="relative z-10 mt-4 text-center">
         <label className="flex items-center justify-center gap-2 text-sm">
           <input
             type="checkbox"
