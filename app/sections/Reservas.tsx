@@ -8,9 +8,39 @@ export default function Reservas() {
   return (
     <section
       id="reservas"
-      className="min-h-screen flex flex-col justify-center items-center bg-beige text-darkgreen px-4 py-16 font-poppins"
+      className="relative min-h-screen flex flex-col justify-center items-center bg-beige text-darkgreen px-4 py-16 font-poppins overflow-visible"
     >
-      <div className="w-full max-w-xl bg-[#f3ebc8] rounded-xl shadow-md p-8 border border-darkgreen">
+      {/* SVG decorativo superior izquierdo */}
+      <svg
+        width="600"
+        height="600"
+        viewBox="0 0 600 600"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="absolute top-0 right-0 opacity-80 pointer-events-none z-0"
+      >
+        <circle cx="400" cy="400" r="80" stroke="#E9A23B" strokeWidth="2.5" />
+        <circle cx="400" cy="400" r="120" stroke="#E9A23B" strokeWidth="1.5" />
+        <circle cx="400" cy="400" r="160" stroke="#E9A23B" strokeWidth="1.5" />
+        <circle cx="400" cy="400" r="200" stroke="#E9A23B" strokeWidth="1.5" />
+      </svg>
+
+      {/* SVG decorativo inferior derecho */}
+      <svg
+        width="400"
+        height="400"
+        viewBox="0 0 400 400"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="absolute bottom-0 left-0 opacity-80 pointer-events-none z-0"
+      >
+        <circle cx="200" cy="200" r="80" stroke="#E9A23B" strokeWidth="2.5" />
+        <circle cx="200" cy="200" r="120" stroke="#E9A23B" strokeWidth="1.5" />
+        <circle cx="200" cy="200" r="160" stroke="#E9A23B" strokeWidth="1.5" />
+        <circle cx="200" cy="200" r="190" stroke="#E9A23B" strokeWidth="1.5" />
+      </svg>
+      {/* Contenido */}
+      <div className="relative z-10 w-full max-w-xl bg-[rgb(243,235,200)] rounded-xl shadow-md p-8 border border-darkgreen">
         <h2 className="text-3xl font-theSeasons font-bold mb-6 text-center text-darkgreen">
           Reservas
         </h2>
@@ -22,8 +52,12 @@ export default function Reservas() {
           }}
           className="space-y-6"
         >
+          {/* Nombre */}
           <div>
-            <label className="block text-sm font-theSeasons mb-1" htmlFor="nombre">
+            <label
+              className="block text-sm font-theSeasons mb-1"
+              htmlFor="nombre"
+            >
               Nombre <span className="text-mustard">*</span>
             </label>
             <input
@@ -35,8 +69,12 @@ export default function Reservas() {
             />
           </div>
 
+          {/* Email */}
           <div>
-            <label className="block text-sm font-theSeasons mb-1" htmlFor="email">
+            <label
+              className="block text-sm font-theSeasons mb-1"
+              htmlFor="email"
+            >
               Email <span className="text-mustard">*</span>
             </label>
             <input
@@ -48,8 +86,12 @@ export default function Reservas() {
             />
           </div>
 
+          {/* Teléfono */}
           <div>
-            <label className="block text-sm font-theSeasons mb-1" htmlFor="telefono">
+            <label
+              className="block text-sm font-theSeasons mb-1"
+              htmlFor="telefono"
+            >
               Teléfono <span className="text-mustard">*</span>
             </label>
             <input
@@ -61,8 +103,12 @@ export default function Reservas() {
             />
           </div>
 
+          {/* Personas */}
           <div>
-            <label className="block text-sm font-theSeasons mb-1" htmlFor="personas">
+            <label
+              className="block text-sm font-theSeasons mb-1"
+              htmlFor="personas"
+            >
               ¿Cuántas personas? <span className="text-mustard">*</span>
             </label>
             <select
@@ -84,8 +130,12 @@ export default function Reservas() {
             </p>
           </div>
 
+          {/* Mensaje */}
           <div>
-            <label className="block text-sm font-theSeasons mb-1" htmlFor="mensaje">
+            <label
+              className="block text-sm font-theSeasons mb-1"
+              htmlFor="mensaje"
+            >
               Indícanos la fecha, hora y si es una ocasión especial.{" "}
               <span className="text-mustard">*</span>
             </label>
@@ -98,6 +148,7 @@ export default function Reservas() {
             ></textarea>
           </div>
 
+          {/* Botón */}
           <div className="text-center">
             <button
               type="submit"

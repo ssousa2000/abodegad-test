@@ -29,7 +29,7 @@ export default function Cartas() {
   return (
     <section
       id="cartas"
-      className="min-h-[50vh] flex flex-col justify-start items-center bg-beige text-darkgreen font-poppins py-24 px-4"
+      className="relative min-h-[50vh] flex flex-col justify-start items-center bg-beige text-darkgreen font-poppins py-24 px-4"
     >
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4 text-darkgreen font-theSeasons">
@@ -39,7 +39,8 @@ export default function Cartas() {
           Cada plato refleja nuestra dedicación por ofrecer{" "}
           <span className="font-bold text-lightmustard">
             sabor, tradición y calidad
-          </span>.
+          </span>
+          .
         </p>
       </div>
 

@@ -46,6 +46,35 @@ export default function CarouselPlatos() {
 
   return (
     <section className="bg-beige py-12 px-4 font-poppins text-darkgreen">
+       {/* SVG decorativo superior izquierdo */}
+      <svg
+        width="600"
+        height="600"
+        viewBox="0 0 600 600"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="absolute top-0 right-0 opacity-80 pointer-events-none z-0"
+      >
+        <circle cx="400" cy="400" r="80" stroke="#E9A23B" strokeWidth="2.5" />
+        <circle cx="400" cy="400" r="120" stroke="#E9A23B" strokeWidth="1.5" />
+        <circle cx="400" cy="400" r="160" stroke="#E9A23B" strokeWidth="1.5" />
+        <circle cx="400" cy="400" r="200" stroke="#E9A23B" strokeWidth="1.5" />
+      </svg>
+
+      {/* SVG decorativo inferior derecho */}
+      <svg
+        width="400"
+        height="400"
+        viewBox="0 0 400 400"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="absolute bottom-0 left-0 opacity-80 pointer-events-none z-0"
+      >
+        <circle cx="200" cy="200" r="80" stroke="#E9A23B" strokeWidth="2.5" />
+        <circle cx="200" cy="200" r="120" stroke="#E9A23B" strokeWidth="1.5" />
+        <circle cx="200" cy="200" r="160" stroke="#E9A23B" strokeWidth="1.5" />
+        <circle cx="200" cy="200" r="190" stroke="#E9A23B" strokeWidth="1.5" />
+      </svg>
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4 text-darkgreen font-theSeasons">
           Una coleccion de momentos y platos en la bodega{" "}
