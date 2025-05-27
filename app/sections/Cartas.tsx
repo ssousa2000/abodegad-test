@@ -18,7 +18,7 @@ export default function Cartas() {
     {
       nombre: "Carta de la Barra",
       archivo: "/pdfs/carta-barra.pdf",
-      imagen: "/cartas/platos.png", // OTRA imagen si tienes, si no repite platos
+      imagen: "/cartas/barra.png", 
     },
     {
       nombre: "Carta de Mocktails",
@@ -64,7 +64,7 @@ export default function Cartas() {
             {/* Overlay para legibilidad */}
             <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300" />
             {/* Texto centrado */}
-            <span className="relative z-10 text-2xl font-bold font-theSeasons text-lightmustard drop-shadow-lg px-4">
+            <span className="relative z-10 text-2xl font-theSeasons text-lightmustard drop-shadow-lg px-4">
               {carta.nombre}
             </span>
           </a>
