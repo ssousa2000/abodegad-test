@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -58,13 +59,20 @@ export default function Footer() {
                 >
                   Reservas
                 </a>
+                <a href="https://www.instagram.com/bodegadalmacia/?hl=en"
+                target="_blank"
+                rel="noopenernoreferrer"
+                className="flex items-center gap-1 hover:text-mustard hover:scale-105 transition-transform duration-200"
+                ><FaInstagram className="w-8 h-8" />
+                </a>
               </div>
             </div>
 
             <div className="space-y-2">
               <span className="font-bold font-theSeasons text-lg">Horario</span>
-              <div>Lunes - Viernes: 12:00 - 23:00</div>
-              <div>Sábado - Domingo: 12:00 - 00:00</div>
+              <div>Lunes - Sábados: 12:00 - 23:00</div>
+              <div>Domingos: 12:00 - 18:00</div>
+              <div>Teléfono: +51 980 080 232</div>
             </div>
           </div>
 

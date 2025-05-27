@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const images = [
-  "/images/hero/1.jpg",
+  // "/images/hero/1.jpg",
   "/images/hero/2.jpg",
   "/images/hero/3.jpg",
   "/images/hero/4.jpg",
@@ -73,12 +73,12 @@ export default function Hero() {
               Horario de atención:
             </h3>
             <p>
-              <span className="font-bold text-beige">Lunes a Viernes:</span>{" "}
+              <span className="font-bold text-beige">Lunes a Sábados:</span>{" "}
               12:00 – 23:00
             </p>
             <p>
-              <span className="font-bold text-beige">Sábados y Domingos:</span>{" "}
-              12:00 – 00:00
+              <span className="font-bold text-beige">Domingos:</span>{" "}
+              12:00 – 18:00
             </p>
           </div>
         </div>

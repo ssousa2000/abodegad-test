@@ -3,26 +3,32 @@ export default function Cartas() {
     {
       nombre: "Carta de Platos",
       archivo: "/pdfs/carta-principal.pdf",
+      imagen: "/cartas/platos.png",
     },
     {
       nombre: "Carta de Vinos",
       archivo: "/pdfs/carta-vinos.pdf",
+      imagen: "/cartas/vinos.png",
     },
     {
       nombre: "La Hora del Sanguchito",
       archivo: "/pdfs/carta-sanguchito.pdf",
+      imagen: "/cartas/platos.png", // OTRA imagen si tienes, si no repite platos
     },
     {
       nombre: "Carta de la Barra",
       archivo: "/pdfs/carta-barra.pdf",
+      imagen: "/cartas/platos.png", // OTRA imagen si tienes, si no repite platos
     },
     {
       nombre: "Carta de Mocktails",
       archivo: "/pdfs/carta-mocktails.pdf",
+      imagen: "/cartas/mocktails.png",
     },
     {
       nombre: "Carta de Postres",
       archivo: "/pdfs/carta-postres.pdf",
+      imagen: "/cartas/platos.png", // OTRA imagen si tienes, si no repite platos
     },
   ];
 
@@ -31,16 +37,13 @@ export default function Cartas() {
       id="cartas"
       className="relative min-h-[50vh] flex flex-col justify-start items-center bg-beige text-darkgreen font-poppins py-24 px-4"
     >
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-4xl mx-auto text-center mb-8">
         <h2 className="text-3xl font-bold mb-4 text-darkgreen font-theSeasons">
           Nuestras Cartas
         </h2>
         <p className="text-lg mb-10">
           Cada plato refleja nuestra dedicación por ofrecer{" "}
-          <span className="font-bold text-lightmustard">
-            sabor, tradición y calidad
-          </span>
-          .
+          <span className="text-lightmustard">sabor, tradición y calidad</span>.
         </p>
       </div>
 
@@ -51,9 +54,17 @@ export default function Cartas() {
             href={carta.archivo}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#f3ebc8] min-h-[200px] rounded-xl border-2 border-darkgreen shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center p-6 text-center"
+            className="relative min-h-[220px] rounded-xl border-2 border-darkgreen shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center text-center group overflow-hidden"
+            style={{
+              backgroundImage: `url(${carta.imagen})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
           >
-            <span className="text-xl font-semibold text-darkgreen font-theSeasons">
+            {/* Overlay para legibilidad */}
+            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300" />
+            {/* Texto centrado */}
+            <span className="relative z-10 text-2xl font-bold font-theSeasons text-lightmustard drop-shadow-lg px-4">
               {carta.nombre}
             </span>
           </a>

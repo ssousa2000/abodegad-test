@@ -44,8 +44,107 @@ export default function Reservas() {
         <h2 className="text-3xl font-theSeasons font-bold mb-6 text-center text-darkgreen">
           Reservas
         </h2>
+<form
+  action="https://formsubmit.co/labodegareservas@gmail.com"
+  method="POST"
+  className="space-y-6"
+>
+  {/* Nombre */}
+  <div>
+    <label className="block text-sm font-theSeasons mb-1" htmlFor="nombre">
+      Nombre <span className="text-mustard">*</span>
+    </label>
+    <input
+      id="nombre"
+      name="nombre"
+      type="text"
+      required
+      className="w-full rounded-md border border-darkgreen bg-beige text-darkgreen font-poppins px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green"
+    />
+  </div>
 
-        <form
+  {/* Email */}
+  <div>
+    <label className="block text-sm font-theSeasons mb-1" htmlFor="email">
+      Email <span className="text-mustard">*</span>
+    </label>
+    <input
+      id="email"
+      name="email"
+      type="email"
+      required
+      className="w-full rounded-md border border-darkgreen bg-beige text-darkgreen font-poppins px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green"
+    />
+  </div>
+
+  {/* Teléfono */}
+  <div>
+    <label className="block text-sm font-theSeasons mb-1" htmlFor="telefono">
+      Teléfono <span className="text-mustard">*</span>
+    </label>
+    <input
+      id="telefono"
+      name="telefono"
+      type="tel"
+      required
+      className="w-full rounded-md border border-darkgreen bg-beige text-darkgreen font-poppins px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green"
+    />
+  </div>
+
+  {/* Personas */}
+  <div>
+    <label className="block text-sm font-theSeasons mb-1" htmlFor="personas">
+      ¿Cuántas personas? <span className="text-mustard">*</span>
+    </label>
+    <select
+      id="personas"
+      name="personas"
+      required
+      value={personas}
+      onChange={(e) => setPersonas(e.target.value)}
+      className="w-full rounded-md border border-darkgreen bg-beige text-darkgreen font-poppins px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green"
+    >
+      {Array.from({ length: 10 }, (_, i) => (
+        <option key={i + 1} value={i + 1}>
+          {i + 1}
+        </option>
+      ))}
+    </select>
+    <p className="text-xs text-darkgreen mt-1 font-poppins">
+      * Si son más de 10 personas, por favor indícalo abajo.
+    </p>
+  </div>
+
+  {/* Mensaje */}
+  <div>
+    <label className="block text-sm font-theSeasons mb-1" htmlFor="mensaje">
+      Indícanos la fecha, hora y si es una ocasión especial.{" "}
+      <span className="text-mustard">*</span>
+    </label>
+    <textarea
+      id="mensaje"
+      name="mensaje"
+      required
+      rows={4}
+      className="w-full rounded-md border border-darkgreen bg-beige text-darkgreen font-poppins px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green"
+    ></textarea>
+  </div>
+
+  {/* (Opcional) Redirección tras enviar */}
+  {/* <input type="hidden" name="_next" value="https://tuweb.com/gracias" /> */}
+
+  {/* Botón */}
+  <div className="text-center">
+    <button
+      type="submit"
+      className="bg-darkgreen text-beige font-theSeasons px-6 py-2 rounded-full shadow-md hover:bg-mustard transition"
+    >
+      Reservar
+    </button>
+  </div>
+</form>
+
+        {/* <form
           onSubmit={(e) => {
             e.preventDefault();
             alert("Reserva enviada (aún falta configurar envío de correo)");
@@ -53,7 +152,7 @@ export default function Reservas() {
           className="space-y-6"
         >
           {/* Nombre */}
-          <div>
+          {/* <div>
             <label
               className="block text-sm font-theSeasons mb-1"
               htmlFor="nombre"
@@ -67,10 +166,10 @@ export default function Reservas() {
               required
               className="w-full rounded-md border border-darkgreen bg-beige text-darkgreen font-poppins px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green"
             />
-          </div>
+          </div> */}
 
           {/* Email */}
-          <div>
+          {/* <div>
             <label
               className="block text-sm font-theSeasons mb-1"
               htmlFor="email"
@@ -84,10 +183,10 @@ export default function Reservas() {
               required
               className="w-full rounded-md border border-darkgreen bg-beige text-darkgreen font-poppins px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green"
             />
-          </div>
+          </div> */}
 
           {/* Teléfono */}
-          <div>
+          {/* <div>
             <label
               className="block text-sm font-theSeasons mb-1"
               htmlFor="telefono"
@@ -101,10 +200,10 @@ export default function Reservas() {
               required
               className="w-full rounded-md border border-darkgreen bg-beige text-darkgreen font-poppins px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green"
             />
-          </div>
+          </div> */}
 
           {/* Personas */}
-          <div>
+          {/* <div>
             <label
               className="block text-sm font-theSeasons mb-1"
               htmlFor="personas"
@@ -128,10 +227,10 @@ export default function Reservas() {
             <p className="text-xs text-darkgreen mt-1 font-poppins">
               * Si son más de 10 personas, por favor indícalo abajo.
             </p>
-          </div>
+          </div> */}
 
           {/* Mensaje */}
-          <div>
+          {/* <div>
             <label
               className="block text-sm font-theSeasons mb-1"
               htmlFor="mensaje"
@@ -146,10 +245,10 @@ export default function Reservas() {
               rows={4}
               className="w-full rounded-md border border-darkgreen bg-beige text-darkgreen font-poppins px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-green"
             ></textarea>
-          </div>
+          </div> */}
 
           {/* Botón */}
-          <div className="text-center">
+          {/* <div className="text-center">
             <button
               type="submit"
               className="bg-darkgreen text-beige font-theSeasons px-6 py-2 rounded-full shadow-md hover:bg-mustard transition"
@@ -157,7 +256,7 @@ export default function Reservas() {
               Reservar
             </button>
           </div>
-        </form>
+        </form> */} 
       </div>
     </section>
   );

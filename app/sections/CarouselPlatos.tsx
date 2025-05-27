@@ -68,7 +68,7 @@ export default function CarouselPlatos() {
         </h2>
         <p className="text-lg mb-10">
           Sabores que cuentan historias,{" "}
-          <span className="font-bold text-lightmustard">
+          <span className="text-lightmustard">
             momentos que se quedan contigo
           </span>
           .

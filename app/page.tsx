@@ -6,6 +6,7 @@ import SocialProof from "./sections/SocialProof";
 import Cartas from "./sections/Cartas";
 import CarouselPlatos from "./sections/CarouselPlatos";
 import Reservas from "./sections/Reservas";
+import WhatsappFloatButton from "./components/WhatsappButton";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Cartas />
       <SocialProof />
       <Reservas />
+      <WhatsappFloatButton/>
       <Footer />
     </div>
   );
