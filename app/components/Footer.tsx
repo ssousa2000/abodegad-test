@@ -33,7 +33,7 @@ export default function Footer() {
           {/* Enlaces y horario */}
           <div className="grid grid-cols-2 gap-4 text-sm">
             <div className="space-y-2">
-              <span className="font-bold font-theSeasons text-lg">Enlaces</span>
+              <span className="font-bold font-playfair text-lg">Enlaces</span>
               <div className="flex flex-col gap-1">
                 <a
                   href="#nosotros"
@@ -69,7 +69,7 @@ export default function Footer() {
             </div>
 
             <div className="space-y-2">
-              <span className="font-bold font-theSeasons text-lg">Horario</span>
+              <span className="font-bold font-playfair text-lg">Horario</span>
               <div>Lunes - Sábados: 12:00 - 23:00</div>
               <div>Domingos: 12:00 - 18:00</div>
               <div>Teléfono: +51 980 080 232</div>

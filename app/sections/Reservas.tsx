@@ -41,7 +41,7 @@ export default function Reservas() {
       </svg>
       {/* Contenido */}
       <div className="relative z-10 w-full max-w-xl bg-[rgb(243,235,200)] rounded-xl shadow-md p-8 border border-darkgreen">
-        <h2 className="text-3xl font-theSeasons font-bold mb-6 text-center text-darkgreen">
+        <h2 className="text-3xl font-playfair font-bold mb-6 text-center text-darkgreen">
           Reservas
         </h2>
 <form
@@ -51,7 +51,7 @@ export default function Reservas() {
 >
   {/* Nombre */}
   <div>
-    <label className="block text-sm font-theSeasons mb-1" htmlFor="nombre">
+    <label className="block text-sm font-playfair mb-1" htmlFor="nombre">
       Nombre <span className="text-mustard">*</span>
     </label>
     <input
@@ -65,7 +65,7 @@ export default function Reservas() {
 
   {/* Email */}
   <div>
-    <label className="block text-sm font-theSeasons mb-1" htmlFor="email">
+    <label className="block text-sm font-playfair mb-1" htmlFor="email">
       Email <span className="text-mustard">*</span>
     </label>
     <input
@@ -79,7 +79,7 @@ export default function Reservas() {
 
   {/* Teléfono */}
   <div>
-    <label className="block text-sm font-theSeasons mb-1" htmlFor="telefono">
+    <label className="block text-sm font-playfair mb-1" htmlFor="telefono">
       Teléfono <span className="text-mustard">*</span>
     </label>
     <input
@@ -93,7 +93,7 @@ export default function Reservas() {
 
   {/* Personas */}
   <div>
-    <label className="block text-sm font-theSeasons mb-1" htmlFor="personas">
+    <label className="block text-sm font-playfair mb-1" htmlFor="personas">
       ¿Cuántas personas? <span className="text-mustard">*</span>
     </label>
     <select
@@ -117,7 +117,7 @@ export default function Reservas() {
 
   {/* Mensaje */}
   <div>
-    <label className="block text-sm font-theSeasons mb-1" htmlFor="mensaje">
+    <label className="block text-sm font-playfair mb-1" htmlFor="mensaje">
       Indícanos la fecha, hora y si es una ocasión especial.{" "}
       <span className="text-mustard">*</span>
     </label>
@@ -137,7 +137,7 @@ export default function Reservas() {
   <div className="text-center">
     <button
       type="submit"
-      className="bg-darkgreen text-beige font-theSeasons px-6 py-2 rounded-full shadow-md hover:bg-mustard transition"
+      className="bg-darkgreen text-beige font-playfair px-6 py-2 rounded-full shadow-md hover:bg-mustard transition"
     >
       Reservar
     </button>

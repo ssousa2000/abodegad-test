@@ -37,7 +37,7 @@ export default function Nosotros() {
       <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-5 gap-10 items-start relative z-10">
         {/* Texto estrecho (2/5) */}
         <div className="md:col-span-2">
-          <h2 className="text-5xl font-bold text-darkgreen mb-8 font-theSeasons">
+          <h2 className="text-5xl font-bold text-darkgreen mb-8 font-playfair">
             La Bodega
           </h2>
           <p className="text-base leading-relaxed mb-4">

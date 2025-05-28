@@ -1,12 +1,12 @@
 export default function Cartas() {
   const cartas = [
     {
-      nombre: "Carta de Platos",
+      nombre: "Carta Principal",
       archivo: "/pdfs/carta-principal.pdf",
       imagen: "/cartas/platos.png",
     },
     {
-      nombre: "Carta de Vinos",
+      nombre: "Vinos",
       archivo: "/pdfs/carta-vinos.pdf",
       imagen: "/cartas/vinos.png",
     },
@@ -16,17 +16,17 @@ export default function Cartas() {
       imagen: "/cartas/platos.png", // OTRA imagen si tienes, si no repite platos
     },
     {
-      nombre: "Carta de la Barra",
+      nombre: "La Barra",
       archivo: "/pdfs/carta-barra.pdf",
       imagen: "/cartas/barra.png", 
     },
     {
-      nombre: "Carta de Mocktails",
+      nombre: "Mocktails",
       archivo: "/pdfs/carta-mocktails.pdf",
       imagen: "/cartas/mocktails.png",
     },
     {
-      nombre: "Carta de Postres",
+      nombre: "Postres",
       archivo: "/pdfs/carta-postres.pdf",
       imagen: "/cartas/platos.png", // OTRA imagen si tienes, si no repite platos
     },
@@ -38,7 +38,7 @@ export default function Cartas() {
       className="relative min-h-[50vh] flex flex-col justify-start items-center bg-beige text-darkgreen font-poppins py-24 px-4"
     >
       <div className="max-w-4xl mx-auto text-center mb-8">
-        <h2 className="text-3xl font-bold mb-4 text-darkgreen font-theSeasons">
+        <h2 className="text-3xl font-bold mb-4 text-darkgreen font-playfair">
           Nuestras Cartas
         </h2>
         <p className="text-lg mb-10">
@@ -64,7 +64,7 @@ export default function Cartas() {
             {/* Overlay para legibilidad */}
             <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300" />
             {/* Texto centrado */}
-            <span className="relative z-10 text-2xl font-theSeasons text-lightmustard drop-shadow-lg px-4">
+            <span className="relative z-10 text-2xl font-playfair text-lightmustard drop-shadow-lg px-4">
               {carta.nombre}
             </span>
           </a>

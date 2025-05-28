@@ -63,7 +63,7 @@ export default function CarouselPlatos() {
 
       {/* Texto */}
       <div className="relative z-10 max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-4 text-darkgreen font-theSeasons">
+        <h2 className="text-3xl font-bold mb-4 text-darkgreen font-playfair">
           Una coleccion de momentos y platos en la bodega
         </h2>
         <p className="text-lg mb-10">
