@@ -38,7 +38,7 @@ export default function Nosotros() {
         {/* Texto estrecho (2/5) */}
         <div className="md:col-span-2">
           <h2 className="text-5xl font-bold text-darkgreen mb-8 font-playfair">
-            La Bodega
+            La Dalmacia
           </h2>
           <p className="text-base leading-relaxed mb-4">
             En la Bodega Dalmacia, cada detalle está pensado para que te sientas

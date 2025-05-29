@@ -45,10 +45,10 @@ export default function CarouselPlatos() {
           Una colección de momentos y platos en la Bodega
         </h2>
         {/* Carrusel Coverflow */}
-        <div className="relative w-full flex justify-center items-center" style={{ height: 420 }}>
+        <div className="relative w-full flex justify-center items-center px-2 sm:px-0" style={{ height: 420 }}>
           <button
             onClick={() => setCurrent((current - 1 + images.length) % images.length)}
-            className="absolute left-0 top-1/2 -translate-y-1/2 bg-beige border border-darkgreen rounded-full p-2 z-20"
+            className="absolute left-0 top-1/2 -translate-y-1/2 bg-beige border border-darkgreen rounded-full p-2 z-40"
           >
             <ChevronLeft className="text-darkgreen" />
           </button>
@@ -86,7 +86,7 @@ export default function CarouselPlatos() {
                     background: "#f3ebc8",
                   }}
                 >
-                  <div className="relative w-[320px] h-[420px] overflow-hidden rounded-xl">
+                  <div className="relative w-[220px] h-[280px] sm:w-[320px] sm:h-[420px] overflow-hidden rounded-xl">
                     <Image
                       src={src}
                       alt={`Plato ${i + 1}`}
@@ -102,7 +102,7 @@ export default function CarouselPlatos() {
           </div>
           <button
             onClick={() => setCurrent((current + 1) % images.length)}
-            className="absolute right-0 top-1/2 -translate-y-1/2 bg-beige border border-darkgreen rounded-full p-2 z-20"
+            className="absolute right-0 top-1/2 -translate-y-1/2 bg-beige border border-darkgreen rounded-full p-2 z-40"
           >
             <ChevronRight className="text-darkgreen" />
           </button>

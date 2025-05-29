@@ -13,7 +13,7 @@ export default function Cartas() {
     {
       nombre: "La Hora del Sanguchito",
       archivo: "/pdfs/carta-sanguchito.pdf",
-      imagen: "/cartas/platos.png", // OTRA imagen si tienes, si no repite platos
+      imagen: "/cartas/sanguchito.png",
     },
     {
       nombre: "La Barra",
@@ -26,9 +26,9 @@ export default function Cartas() {
       imagen: "/cartas/mocktails.png",
     },
     {
-      nombre: "Postres",
+      nombre: "Postres y Cafés",
       archivo: "/pdfs/carta-postres.pdf",
-      imagen: "/cartas/platos.png", // OTRA imagen si tienes, si no repite platos
+      imagen: "/cartas/postresYcafe.png", // OTRA imagen si tienes, si no repite platos
     },
   ];
 
