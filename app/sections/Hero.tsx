@@ -80,6 +80,10 @@ export default function Hero() {
               <span className="font-bold text-beige">Domingos:</span>{" "}
               12:00 – 18:00
             </p>
+            <div className="mt-2">
+              <span className="font-bold text-beige">Dirección:</span>{" "}
+              <span className="text-beige/70">San Fernando, 401, Miraflores</span>
+            </div>
           </div>
         </div>
       </div>
