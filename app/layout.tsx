@@ -16,8 +16,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata = {
-  title: "AbodegaD",
-  description: "Restaurante AbodegaD",
+  title: "La Dalmacia",
+  description: "Restaurante La Dalmacia",
 };
 
 export default function RootLayout({
