@@ -5,6 +5,7 @@ import Nosotros from "./sections/Nosotros";
 import SocialProof from "./sections/SocialProof";
 import Cartas from "./sections/Cartas";
 import CarouselPlatos from "./sections/CarouselPlatos";
+import CartaNavidena from "./sections/CartaNavidena";
 import Reservas from "./sections/Reservas";
 import WhatsappFloatButton from "./components/WhatsappButton";
 import { Analytics } from "@vercel/analytics/next"
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <Nosotros />
       <CarouselPlatos />
+      <CartaNavidena />
       <Cartas />
       <SocialProof />
       <Reservas />
