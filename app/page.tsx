@@ -18,7 +18,7 @@ export default function Home() {
       <Hero />
       <Nosotros />
       <CarouselPlatos />
-      <CartaNavidena />
+      {/* <CartaNavidena /> */}
       <Cartas />
       <SocialProof />
       <Reservas />
