@@ -55,11 +55,12 @@ export default function Hero() {
           {/* Columna izquierda: texto slogan */}
           <div className="text-left self-center">
             <Image
-              src="/LogoDalmacia/dalmacia-copy.png" // asegúrate de que esta ruta sea correcta
+              src="/LogoDalmacia/dalmacia-copy.png"
               alt="Logo Bodega Dalmacia"
-              width={300} // ajusta según lo necesites
+              width={300}
               height={100}
               className="mb-6"
+              style={{ width: "auto", height: "auto" }}
               priority
             />
             <p className="text-beige text-lg sm:text-xl leading-relaxed max-w-lg">

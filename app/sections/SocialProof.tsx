@@ -65,7 +65,14 @@ export default function SocialProof() {
           >
             {/* Top: Image (40%) */}
             <div className="flex flex-col justify-center items-center flex-[2_2_0%] w-full">
-              <Image src={r.img} alt={r.imgAlt} width={r.imgW} height={r.imgH} className="object-contain max-h-16" />
+              <Image
+                src={r.img}
+                alt={r.imgAlt}
+                width={r.imgW}
+                height={r.imgH}
+                className="max-h-16 object-contain"
+                style={{ width: "auto", height: "auto" }}
+              />
             </div>
             {/* Middle: Stars/Rating (20%) */}
             <div className="flex flex-col justify-center items-center flex-[1_1_0%] w-full">

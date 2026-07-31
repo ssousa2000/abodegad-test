@@ -59,6 +59,7 @@ export default function Nosotros() {
               alt="Interior Bodega Dalmacia"
               fill
               className="object-cover"
+              sizes="(max-width: 768px) 100vw, 60vw"
               priority
             />
           </div>
