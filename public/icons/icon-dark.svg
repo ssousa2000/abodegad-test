@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="La Dalmacia">
+  <rect width="32" height="32" rx="6" fill="#fffadd"/>
+  <svg x="4" y="4" width="24" height="24" viewBox="0 0 24 24">
+    <path
+      fill="#244605"
+      d="M6 4h5.5c5.2 0 8.5 3.6 8.5 8s-3.3 8-8.5 8H6V4zm2.5 2.5v11H11c3.2 0 5-2.4 5-5.5S14.2 6.5 11 6.5H8.5V6.5z"
+    />
+  </svg>
+</svg>
