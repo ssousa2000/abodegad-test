@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Horario from "../components/Horario";
 
 const images = [
   // "/images/hero/1.jpg",
@@ -68,23 +69,7 @@ export default function Hero() {
           </div>
 
           {/* Columna derecha: horario */}
-          <div className="text-right text-beige self-center">
-            <h3 className="text-xl sm:text-2xl font-semibold text-lightmustard mb-2">
-              Horario de atención:
-            </h3>
-            <p>
-              <span className="font-bold text-beige">Lunes a Sábados:</span>{" "}
-              12:00 – 23:00
-            </p>
-            <p>
-              <span className="font-bold text-beige">Domingos:</span>{" "}
-              12:00 – 18:00
-            </p>
-            <div className="mt-2">
-              <span className="font-bold text-beige">Dirección:</span>{" "}
-              <span className="text-beige/70">San Fernando, 401, Miraflores</span>
-            </div>
-          </div>
+          <Horario variant="hero" />
         </div>
       </div>
     </section>
