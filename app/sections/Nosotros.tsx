@@ -38,16 +38,18 @@ export default function Nosotros() {
         {/* Texto estrecho (2/5) */}
         <div className="md:col-span-2">
           <h2 className="text-5xl font-bold text-darkgreen mb-8 font-playfair">
-            La Dalmacia
+            Sobre Bodega Dalmacia
           </h2>
           <p className="text-base leading-relaxed mb-4">
-            En la Bodega Dalmacia, cada detalle está pensado para que te sientas
-            como en casa. Nuestra cocina se inspira en recetas familiares,
-            preparadas con ingredientes de calidad y mucho cariño.
+            En Bodega Dalmacia, cada detalle está pensado para que te sientas
+            como en casa. Nuestra cocina peruana se inspira en recetas
+            familiares, preparadas con ingredientes de calidad y mucho cariño en
+            el corazón de Miraflores, Lima.
           </p>
           <p className="text-base leading-relaxed">
             Creemos en una experiencia cercana, sin pretensiones, donde la
-            tradición y la buena atención crean momentos memorables.
+            tradición y la buena atención crean momentos memorables — desde
+            desayunos hasta cenas con los mejores platos de la casa.
           </p>
         </div>
 
@@ -56,7 +58,7 @@ export default function Nosotros() {
           <div className="relative h-[420px] rounded-xl overflow-hidden shadow-lg border-2 border-green">
             <Image
               src="/images/dalmacia-interior.jpg"
-              alt="Interior Bodega Dalmacia"
+              alt="Interior del restaurante Bodega Dalmacia en Miraflores, Lima"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 60vw"

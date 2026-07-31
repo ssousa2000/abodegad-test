@@ -14,11 +14,13 @@ export default function Cartas() {
     >
       <div className="max-w-4xl mx-auto text-center mb-8">
         <h2 className="text-3xl font-bold mb-4 text-darkgreen font-playfair">
-          Nuestras Cartas
+          Cartas y menús de La Dalmacia
         </h2>
         <p className="text-lg mb-10">
-          Cada plato refleja nuestra dedicación por ofrecer{" "}
-          <span className="text-lightmustard">sabor, tradición y calidad</span>.
+          Descubre nuestra carta de desayunos, platos peruanos, vinos, barra y
+          postres. Cada plato refleja nuestra dedicación por ofrecer{" "}
+          <span className="text-lightmustard">sabor, tradición y calidad</span>{" "}
+          en Miraflores, Lima.
         </p>
       </div>
 
@@ -38,6 +40,8 @@ export default function Cartas() {
               href={carta.archivo}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={`Ver carta de ${carta.nombre} — Bodega Dalmacia, Miraflores`}
+              title={`Carta de ${carta.nombre} — La Dalmacia`}
               className={`relative min-h-[220px] rounded-xl border-2 border-darkgreen shadow-md hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 flex items-center justify-center text-center group overflow-hidden ${layoutClass[layout]}`}
               style={{
                 backgroundImage: `url(${carta.imagen})`,

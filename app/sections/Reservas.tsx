@@ -42,7 +42,7 @@ export default function Reservas() {
       {/* Contenido */}
       <div className="relative z-10 w-full max-w-xl bg-[rgb(243,235,200)] rounded-xl shadow-md p-8 border border-darkgreen">
         <h2 className="text-3xl font-playfair font-bold mb-6 text-center text-darkgreen">
-          Reservas
+          Reservar mesa en La Dalmacia
         </h2>
 <form
   action="https://formsubmit.co/labodegareservas@gmail.com"

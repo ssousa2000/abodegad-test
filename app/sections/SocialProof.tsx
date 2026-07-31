@@ -48,8 +48,11 @@ export default function SocialProof() {
       className="min-h-[50vh] flex flex-col justify-start items-center bg-beige text-darkgreen font-poppins py-16 px-4"
     >
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-4">Reseñas y Reconocimientos</h2>
+        <h2 className="text-3xl font-bold mb-4">
+          Reseñas de La Dalmacia en Miraflores
+        </h2>
         <p className="text-lg mb-10">
+          Opiniones de nuestros comensales en Google, TripAdvisor y Mesa 24/7.
           Siempre mejorando para brindarte la mejor calidad de atención.
         </p>
       </div>

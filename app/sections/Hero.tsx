@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Horario from "../components/Horario";
+import { business } from "../data/site";
+import { heroImageAlts } from "../lib/seo";
 
 const images = [
   // "/images/hero/1.jpg",
@@ -35,7 +37,7 @@ export default function Hero() {
         >
           <Image
             src={src}
-            alt={`Slide ${i + 1}`}
+            alt={heroImageAlts[i] ?? `Bodega Dalmacia en Miraflores, Lima`}
             fill
             className={`object-cover transform transition-transform duration-[20000ms] ease-out ${
               i === index ? "scale-110" : "scale-100"
@@ -56,16 +58,21 @@ export default function Hero() {
           <div className="text-left self-center">
             <Image
               src="/LogoDalmacia/dalmacia-copy.png"
-              alt="Logo Bodega Dalmacia"
+              alt={`${business.name} — restaurante en Miraflores, Lima`}
               width={300}
               height={100}
               className="mb-6"
               style={{ width: "auto", height: "auto" }}
               priority
             />
+            <h1 className="text-beige text-2xl sm:text-3xl font-playfair font-bold mb-3">
+              {business.shortName}
+            </h1>
+            <p className="text-beige/90 text-base sm:text-lg mb-3">
+              Restaurante peruano en {business.address.neighborhood}, Lima
+            </p>
             <p className="text-beige text-lg sm:text-xl leading-relaxed max-w-lg">
-              Un espacio único donde la tradición y la modernidad se encuentran
-              para crear experiencias inolvidables.
+              {business.tagline}
             </p>
           </div>
 

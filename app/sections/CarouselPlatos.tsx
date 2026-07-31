@@ -5,6 +5,7 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 import type { EmblaCarouselType } from "embla-carousel";
+import { carouselImageAlts } from "../lib/seo";
 
 const images = [
   "/images/carousel/1.jpeg",
@@ -215,7 +216,7 @@ export default function CarouselPlatos() {
         <h2
           className="text-3xl font-semibold tracking-[-0.02em] mb-10 md:mb-12 text-darkgreen font-theSeasons text-center"
         >
-          Una colección de momentos y platos en la Bodega
+          Platos y momentos en La Dalmacia, Miraflores
         </h2>
 
         <div className="relative w-full">
@@ -258,7 +259,10 @@ export default function CarouselPlatos() {
                     <div className="relative w-[220px] h-[280px] sm:w-[320px] sm:h-[420px] overflow-hidden rounded-[20px]">
                       <Image
                         src={src}
-                        alt={`Plato ${i + 1}`}
+                        alt={
+                          carouselImageAlts[i] ??
+                          `Plato peruano en Bodega Dalmacia, Miraflores`
+                        }
                         fill
                         className="object-cover"
                         draggable={false}
