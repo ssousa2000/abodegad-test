@@ -1,3 +1,37 @@
+export const siteUrl = "https://bodegadalmacia.com";
+
+export const business = {
+  name: "Bodega Dalmacia",
+  shortName: "La Dalmacia",
+  description:
+    "Restaurante de cocina peruana tradicional en Miraflores, Lima. Desayunos, almuerzos y cenas con recetas familiares, lomo saltado, vinos y ambiente acogedor.",
+  tagline:
+    "Un espacio único donde la tradición y la modernidad se encuentran para crear experiencias inolvidables.",
+  email: "labodegareservas@gmail.com",
+  phone: "+51980080232",
+  phoneDisplay: "+51 980 080 232",
+  address: {
+    street: "San Fernando 401",
+    neighborhood: "Miraflores",
+    city: "Lima",
+    region: "Lima",
+    postalCode: "15074",
+    country: "PE",
+  },
+  geo: {
+    latitude: -12.132375,
+    longitude: -77.027847,
+  },
+  instagram: "https://www.instagram.com/bodegadalmacia/",
+  cuisine: ["Peruvian", "Latin American"],
+  priceRange: "$$",
+  aggregateRating: {
+    ratingValue: 4.5,
+    reviewCount: 400,
+    bestRating: 5,
+  },
+} as const;
+
 export type HorarioRow = { label: string; hours: string };
 export type HorarioGroup = { title?: string; rows: HorarioRow[] };
 
