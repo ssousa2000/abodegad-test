@@ -1,11 +1,12 @@
 // app/layout.tsx
-import type { Metadata } from "next";
 import "./globals.css";
-import { Beau_Rivage, Poppins, Playfair_Display } from "next/font/google";
+import { Poppins, Playfair_Display } from "next/font/google";
+import JsonLd from "./components/JsonLd";
+import { buildMetadata } from "./lib/seo";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "500", "700"], // Puedes agregar más pesos si los necesitas
+  weight: ["400", "500", "700"],
   variable: "--font-poppins",
   display: "swap",
 });
@@ -16,21 +17,7 @@ const playfair = Playfair_Display({
   variable: "--font-playfair",
 });
 
-export const metadata: Metadata = {
-  title: "La Dalmacia",
-  description: "Restaurante La Dalmacia",
-  icons: {
-    icon: [
-      { url: "/icon", type: "image/png" },
-      {
-        url: "/icons/icon-dark.svg",
-        type: "image/svg+xml",
-        media: "(prefers-color-scheme: dark)",
-      },
-    ],
-    apple: "/apple-icon",
-  },
-};
+export const metadata = buildMetadata();
 
 export default function RootLayout({
   children,
@@ -38,8 +25,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={`${poppins.variable} ${playfair.variable} font-poppins`}>
-      <body className="font-poppins bg-beige text-darkgreen">{children}</body>
+    <html
+      lang="es-PE"
+      className={`${poppins.variable} ${playfair.variable} font-poppins`}
+    >
+      <body className="font-poppins bg-beige text-darkgreen">
+        <JsonLd />
+        {children}
+      </body>
     </html>
   );
 }
