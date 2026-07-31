@@ -1,4 +1,4 @@
-import { horarios } from "../data/site";
+import { business, horarios } from "../data/site";
 
 type HorarioProps = {
   variant: "hero" | "footer";
@@ -35,7 +35,10 @@ export default function Horario({ variant }: HorarioProps) {
         ))}
         <div className="mt-2">
           <span className="font-bold text-beige">Dirección:</span>{" "}
-          <span className="text-beige/70">San Fernando, 401, Miraflores</span>
+          <span className="text-beige/70">
+            {business.address.street}, {business.address.neighborhood},{" "}
+            {business.address.city}
+          </span>
         </div>
       </div>
     );
@@ -59,7 +62,7 @@ export default function Horario({ variant }: HorarioProps) {
           ))}
         </div>
       ))}
-      <div>Teléfono: +51 980 080 232</div>
+      <div>Teléfono: {business.phoneDisplay}</div>
     </div>
   );
 }

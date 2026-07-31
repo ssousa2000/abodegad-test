@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
+import { business } from "../data/site";
 
 export default function Navegacion() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -14,7 +15,10 @@ export default function Navegacion() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-beige text-darkgreen shadow-lg font-poppins">
+    <nav
+      className="fixed top-0 left-0 right-0 z-50 bg-beige text-darkgreen shadow-lg font-poppins"
+      aria-label="Navegación principal"
+    >
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-4 sm:px-6">
         {/* Logo */}
 
@@ -24,7 +28,7 @@ export default function Navegacion() {
         >
           <Image
             src="/LogoDalmacia/dalmacia.png"
-            alt="Logo BodegaD"
+            alt={`${business.name} — La Dalmacia`}
             width={120}
             height={60}
             className="h-auto w-auto"
