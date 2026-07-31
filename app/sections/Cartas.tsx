@@ -1,37 +1,12 @@
-export default function Cartas() {
-  const cartas = [
-    {
-      nombre: "Carta Principal",
-      archivo: "/pdfs/carta-principal.pdf",
-      imagen: "/cartas/platos.png",
-    },
-    {
-      nombre: "Vinos",
-      archivo: "/pdfs/carta-vinos.pdf",
-      imagen: "/cartas/vinos.png",
-    },
-    {
-      nombre: "La Hora del Sanguchito",
-      archivo: "/pdfs/carta-sanguchito.pdf",
-      imagen: "/cartas/sanguchito.png",
-    },
-    {
-      nombre: "La Barra",
-      archivo: "/pdfs/carta-barra.pdf",
-      imagen: "/cartas/barra.png", 
-    },
-    {
-      nombre: "Mocktails",
-      archivo: "/pdfs/carta-mocktails.pdf",
-      imagen: "/cartas/mocktails.png",
-    },
-    {
-      nombre: "Postres y Cafés",
-      archivo: "/pdfs/carta-postres.pdf",
-      imagen: "/cartas/postresYcafe.png", // OTRA imagen si tienes, si no repite platos
-    },
-  ];
+import { cartas, type CartaLayout } from "../data/site";
 
+const layoutClass: Record<CartaLayout, string> = {
+  hero: "md:col-span-2 md:row-span-2 min-h-[280px]",
+  wide: "md:col-span-2",
+  default: "",
+};
+
+export default function Cartas() {
   return (
     <section
       id="cartas"
@@ -47,28 +22,36 @@ export default function Cartas() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-12 w-full max-w-6xl">
-        {cartas.map((carta) => (
-          <a
-            key={carta.nombre}
-            href={carta.archivo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative min-h-[220px] rounded-xl border-2 border-darkgreen shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center text-center group overflow-hidden"
-            style={{
-              backgroundImage: `url(${carta.imagen})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            {/* Overlay para legibilidad */}
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300" />
-            {/* Texto centrado */}
-            <span className="relative z-10 text-2xl font-playfair text-lightmustard drop-shadow-lg px-4">
-              {carta.nombre}
-            </span>
-          </a>
-        ))}
+      {/*
+        Restaurant-led bento (md+):
+        [ Desayunos 2×2 ] [ Principal ] [ Vinos ]
+                          [ Barra     ] [ Sanguchito ]
+        [ Postres 2-wide ] [ Mocktails 2-wide        ]
+      */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-12 w-full max-w-6xl md:auto-rows-[minmax(220px,auto)]">
+        {cartas.map((carta) => {
+          const layout = carta.layout ?? "default";
+
+          return (
+            <a
+              key={carta.nombre}
+              href={carta.archivo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`relative min-h-[220px] rounded-xl border-2 border-darkgreen shadow-md hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 flex items-center justify-center text-center group overflow-hidden ${layoutClass[layout]}`}
+              style={{
+                backgroundImage: `url(${carta.imagen})`,
+                backgroundSize: "cover",
+                backgroundPosition: carta.backgroundPosition ?? "center",
+              }}
+            >
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300" />
+              <span className="relative z-10 text-2xl font-playfair text-lightmustard drop-shadow-lg px-4">
+                {carta.nombre}
+              </span>
+            </a>
+          );
+        })}
       </div>
     </section>
   );
